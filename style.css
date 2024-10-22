@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+}
+
+.container {
+    background-color: #1a1a1a; /* Dark gray container */
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid red; /* Red border */
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.8); /* Orange glow effect */
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #ff4500; /* Orange color for the heading */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+    color: #ff4500; /* Orange color for label */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid red; /* Red border */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333; /* Dark input background */
+    color: white; /* White text color */
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.8); /* Orange glow */
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 20px rgba(255, 69, 0, 1); /* Stronger glow on focus */
+    border-color: #ff4500;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333; /* Dark background for button */
+    color: #ff4500; /* Orange text */
+    border: 2px solid red; /* Red border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.8); /* Orange glow effect */
+}
+
+button:hover {
+    background-color: #ff4500; /* Orange background on hover */
+    color: black; /* Black text on hover */
+    box-shadow: 0 0 25px rgba(255, 69, 0, 1); /* Stronger glow on hover */
+}
+
+#token-details {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    color: #ff4500; /* Orange text */
+}
+
+.detail-label {
+    font-weight: 500;
+}
+
+.detail-value {
+    font-weight: 400;
+}
+
+.message {
+    margin-top: 20px;
+    color: #e74c3c; /* Red error message */
+}
